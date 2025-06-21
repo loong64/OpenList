@@ -20,7 +20,7 @@ builds:
       - -X 'github.com/OpenListTeam/OpenList/internal/conf.BuiltAt={{ .CommitDate }}'
       - -X 'github.com/OpenListTeam/OpenList/internal/conf.GitAuthor={{ .Env.GITHUB_REPOSITORY_OWNER }}'
       - -X 'github.com/OpenListTeam/OpenList/internal/conf.GitCommit={{ .ShortCommit }}'
-      - -X 'github.com/OpenListTeam/OpenList/internal/conf.Version={{ .Version }}'
+      - -X 'github.com/OpenListTeam/OpenList/internal/conf.Version={{ .Tag }}'
       - -X 'github.com/OpenListTeam/OpenList/internal/conf.WebVersion={{ .Env.WEB_VERSION }}'
     goos:
       - linux
